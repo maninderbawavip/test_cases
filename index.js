@@ -10,6 +10,11 @@ const searchData = (searchTerm) => {
         })
 }
 
+
+const sumTwoNum = (a,b) => {
+    return a+b;
+}
+
 // searchData('Luke').then(results => console.log(results))
 
-module.exports = { searchData }
+module.exports = { searchData, sumTwoNum }

@@ -25,12 +25,28 @@
 // })
 
 
-const { searchData } = require(".")
+const { searchData, sumTwoNum } = require(".")
 
-it('should test the results', () => {
-    expect.assertions(1)
-    searchData('Luke').then(results => {
-        expect(results).toEqual([ 'Luke Skywalker' ])
-        // done()
-    })
+// it('should test the results', () => {
+//     searchData('Luke').then(results => {
+//         expect(results).toEqual([ 'Luke Skywalker' ])
+//         // done()
+//     })
+// })
+
+
+it('should check sum of two numbers', () => {
+
+    const output = sumTwoNum(1,2);
+    expect(output).toEqual(3);
+
+    expect(sumTwoNum(3,4)).toEqual(7);
+    expect(sumTwoNum(-3,4)).toEqual(1);
+
+
 })
+
+
+
+// unit test -> try to mimic the functionality
+// i expect that the output should be correct given proper input
